@@ -1,0 +1,23 @@
+{
+  "name": "feature-flags",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Feature flag resolution with per-environment overrides.",
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --platform=node --packages=external --outfile=dist/index.js",
+    "test": "node --test \"test/**/*.test.js\""
+  },
+  "dependencies": {
+    "dayjs": "1.11.23",
+    "left-pad": "1.3.0",
+    "lodash": "4.17.10"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}
