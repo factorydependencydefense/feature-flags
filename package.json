@@ -10,7 +10,8 @@
   "main": "src/index.js",
   "scripts": {
     "build": "esbuild src/index.js --bundle --platform=node --packages=external --outfile=dist/index.js",
-    "test": "node --test \"test/**/*.test.js\""
+    "test": "node --test \"test/*.test.js\"",
+    "test:security": "node --test \"test/security/**/*.test.js\""
   },
   "dependencies": {
     "dayjs": "1.11.23",
