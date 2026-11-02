@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": [
+    "New releases of dayjs, left-pad, lodash and esbuild must be 7 days old before Renovate raises a pull request, so a compromised publish has time to be yanked.",
+    "internalChecksFilter strict enforces the delay instead of only reporting it: a pending release produces no pull request at all.",
+    "Security fixes are exempt via vulnerabilityAlerts, so a fix for the pinned vulnerable lodash 4.17.10 is raised immediately.",
+    "Emergency bypass for a human: set minimumReleaseAge to null in this file on a branch owned by a CODEOWNER of /renovate.json, or bump the dependency by hand in package.json and package-lock.json. Do not relax internalChecksFilter."
+  ],
+  "extends": [
+    "config:recommended"
+  ],
+  "minimumReleaseAge": "7 days",
+  "internalChecksFilter": "strict",
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "minimumReleaseAge": null
+  }
+}
