@@ -1,6 +1,6 @@
-import get from 'lodash/get.js';
-import keyBy from 'lodash/keyBy.js';
-import merge from 'lodash/merge.js';
+import get from '@factorydependencydefense/lodash-lite/get.js';
+import keyBy from '@factorydependencydefense/lodash-lite/keyBy.js';
+import merge from '@factorydependencydefense/lodash-lite/merge.js';
 
 const defaults = {
   newCheckout: { enabled: false, rollout: 0 },
